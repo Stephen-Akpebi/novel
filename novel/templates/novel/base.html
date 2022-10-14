@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 {% load static %}
-{% load active_link_tag %}
 <html lang="en">
     <head>
     <title>Novel Academy</title>
@@ -56,13 +55,13 @@
             </button>
             <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item {% active_link 'novel:home' 'active' %}"><a href="{% url 'novel:home' %}" class="nav-link pl-0">Home</a></li>
-                <li class="nav-item {% active_link 'novel:about' 'active' %}"><a href="{% url 'novel:about' %}" class="nav-link pl-0">About</a></li>
-                <li class="nav-item {% active_link 'novel:teacher' 'active' %}"><a href="{% url 'novel:teacher' %}" class="nav-link">Teacher</a></li>
-                <li class="nav-item {% active_link 'novel:courses' 'active' %}"><a href="{% url 'novel:courses' %}" class="nav-link">Courses</a></li>
-                <li class="nav-item {% active_link 'novel:gallery' 'active' %}"><a href="{% url 'novel:gallery' %}" class="nav-link">Gallery</a></li>
-                <li class="nav-item {% active_link 'novel:blog' 'active' %}"><a href="{% url 'novel:blog' %}" class="nav-link">Blog</a></li>
-                <li class="nav-item {% active_link 'novel:contact' 'active' %}"><a href="{% url 'novel:contact' %}" class="nav-link">Contact</a></li>
+                <li class="nav-item active "><a href="{% url 'novel:home' %}" class="nav-link pl-0">Home</a></li>
+                <li class="nav-item "><a href="{% url 'novel:about' %}" class="nav-link pl-0">About</a></li>
+                <li class="nav-item "><a href="{% url 'novel:teacher' %}" class="nav-link">Teacher</a></li>
+                <li class="nav-item "><a href="{% url 'novel:courses' %}" class="nav-link">Courses</a></li>
+                <li class="nav-item "><a href="{% url 'novel:gallery' %}" class="nav-link">Gallery</a></li>
+                <li class="nav-item "><a href="{% url 'novel:blog' %}" class="nav-link">Blog</a></li>
+                <li class="nav-item "><a href="{% url 'novel:contact' %}" class="nav-link">Contact</a></li>
             </ul>
             </div>
         </div>
