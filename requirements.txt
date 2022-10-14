@@ -7,6 +7,7 @@ charset-normalizer==2.1.1
 distlib==0.3.5
 dj-database-url==1.0.0
 Django==4.1.2
+django-active-link==0.1.8
 django-bootstrap-v5==1.0.11
 django-bootstrap5==22.1
 django-crispy-forms==1.14.0
