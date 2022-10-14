@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'novel',
+    'active_link',
     #'debug_toolbar',
     #"django_bootstrap5",
     #'crispy_forms',
