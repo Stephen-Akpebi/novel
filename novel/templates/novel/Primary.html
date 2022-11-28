@@ -1,0 +1,55 @@
+{% extends 'novel/base.html' %}
+{% block content %}
+{% load static %}
+	<section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'images/bg_2.jpg' %});">
+	<div class="overlay"></div>
+	<div class="container">
+		<div class="row no-gutters slider-text align-items-center justify-content-center">
+		<div class="col-md-9 ftco-animate text-center">
+			<h1 class="mb-2 bread">PRIMARY</h1>
+			<p class="breadcrumbs"><span class="mr-2"><a href="{% url 'novel:home' %}">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Primary <i class="ion-ios-arrow-forward"></i></span></p>
+		</div>
+		</div>
+	</div>
+	</section>
+		
+	<section class="ftco-section ftco-no-pb">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-2">
+		<div class="col-md-8 text-center heading-section ftco-animate">
+		<h2 class="mb-4"><span>OUR PRIMARY STAGES</span></h2>
+		<p>In compliance with Cambridge International education structures, this department has two divisions:</p>
+
+		<p>A.	KEY STAGE 1 – YEARS 1 & 2 </p>
+		<p>B.	KEY STAGE 2 – YEARS 3 – 6</p>
+
+
+		<p>Each class has a maximum of 20 learners and 2 streams.</p>
+
+		<p>The Cambridge International curriculum provides teachers with an international benchmark that guides teaching and makes the tracking of learners’ progress against outlined objectives possible. This feeds into detailed and structured reporting to parents.</p>
+
+		<p>In addition to the core subjects – English, Mathematics and Science – learners are exposed to a variety of learning experiences through the study of History, Geography, ICT, Music, Art & Design, and French. The outcome of these experiences is the development of crucial learner skills and a strong foundation for secondary education.  </p>
+
+		<p>Our vast and targeted co-curricular offering encourages learner creativity and fosters their individual talent. STEM, Chefs, Ballet, Swimming, Taekwondo, Debate, Languages, Dance, Creative Arts and Photography are only a few offerings learners can choose from. </p>
+		
+		</div>
+	</div>	
+	</section>
+	<section class="ftco-intro" style="background-image: url({% static 'images/bg_3.jpg' %});" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9">
+					<h2>Teaching Your Child Some Good Manners</h2>
+					<p class="mb-0">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+				</div>
+				<div class="col-md-3 d-flex align-items-center">
+					<p class="mb-0"><a href="#" class="btn btn-secondary px-4 py-3">Take a Course</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	{% include 'novel/footer.html' %}
+
+	{% endblock content %}

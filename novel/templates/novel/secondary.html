@@ -1,0 +1,66 @@
+{% extends 'novel/base.html' %}
+{% block content %}
+{% load static %}
+	<section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'images/bg_2.jpg' %});">
+	<div class="overlay"></div>
+	<div class="container">
+		<div class="row no-gutters slider-text align-items-center justify-content-center">
+		<div class="col-md-9 ftco-animate text-center">
+			<h1 class="mb-2 bread">SECONDARY</h1>
+			<p class="breadcrumbs"><span class="mr-2"><a href="{% url 'novel:home' %}">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Secondary <i class="ion-ios-arrow-forward"></i></span></p>
+		</div>
+		</div>
+	</div>
+	</section>
+		
+	<section class="ftco-section ftco-no-pb">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-2">
+		<div class="col-md-8 text-center heading-section ftco-animate">
+		<h2 class="mb-4"><span>OUR SECONDARY STAGES </span></h2>
+		<p>Our objective at this level is to hone skills aquired in the primary stages by providig the best student-centred education that makes uses of a variety of tools and techniques for building assertive, world-class leaders. </p>
+
+
+		
+		</div>
+		</div>
+	</div>	
+	</section>
+	<section class="ftco-intro" style="background-image: url({% static 'images/bg_3.jpg' %});" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9">
+					<h2>Teaching Your Child Some Good Manners</h2>
+					<p class="mb-0">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+				</div>
+				<div class="col-md-3 d-flex align-items-center">
+					<p class="mb-0"><a href="#" class="btn btn-secondary px-4 py-3">Take a Course</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="ftco-section ftco-no-pb">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-2">
+		<div class="col-md-8 text-center heading-section ftco-animate">
+		<h2 class="mb-4"><span>2. UPPER SECONDARY – EAGLES</span></h2>
+
+		<p>IGCSE  – YEARS 9 & 10 </p>
+
+		<h2 class="mb-4"><span>RECEPTION</span></h2>
+
+		<p>The Academy recognises the variety of abilities of learners and demonstrates this in the wide selections of subjects they are allowed to choose from. </p>
+
+
+		<p>IB DIPLOMA  – YEARS 11 & 12</p>
+		
+		<p>The IB Diploma Programme further challenges our learners and best prepares them for the rigours of academic and social life in tertiary institutions globally.</p>
+		
+		</div>
+		</div>
+	</div>	
+	</section>
+	{% include 'novel/footer.html' %}
+
+	{% endblock content %}

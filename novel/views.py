@@ -4,7 +4,7 @@ from telnetlib import GA
 from django.shortcuts import render
 from django.views.generic import TemplateView, DetailView
 from django.views import generic
-from .models import Gallery, Teachers
+from .models import Gallery, Teachers, Bod
 from .forms import ContactForm
 from django.views.generic.edit import FormView
 from django.shortcuts import render, redirect
@@ -24,6 +24,24 @@ class Facility(generic.TemplateView):
     template_name = 'novel/courses.html'
 
 
+class Preschool(generic.TemplateView):
+    template_name = 'novel/preschool.html'
+
+class Primary(generic.TemplateView):
+    template_name = 'novel/primary.html'
+
+class Secondary(generic.TemplateView):
+    template_name = 'novel/secondary.html'
+
+
+class Boarding(generic.TemplateView):
+    template_name = 'novel/boarding.html'
+
+
+class Admission(generic.TemplateView):
+    template_name = 'novel/admission.html'
+
+
 class Contact(generic.TemplateView):
     template_name = 'novel/contact.html'
 
@@ -37,6 +55,11 @@ class Gallery(generic.ListView):
 class Teachers(generic.ListView):
     queryset = Teachers.objects.all()
     template_name = 'novel/teacher.html'
+
+
+class Bod(generic.ListView):
+    queryset = Bod.objects.all()
+    template_name = 'novel/bod.html'
 
 class Blog(generic.TemplateView):
     template_name = 'novel/blog.html'

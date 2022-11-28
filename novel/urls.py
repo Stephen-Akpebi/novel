@@ -17,6 +17,12 @@ urlpatterns = [
     path('blogdetail/',views.BlogDetail.as_view(),name='blogdetail'),
     path('teacher/',views.Teachers.as_view(),name='teacher'),
     path('facility/',views.Facility.as_view(),name='facility'),
+    path('preschool/',views.Preschool.as_view(),name='preschool'),
+    path('primary/',views.Primary.as_view(),name='primary'),
+    path('secondary/',views.Secondary.as_view(),name='secondary'),
+    path('boarding/',views.Boarding.as_view(),name='boarding'),
+    path('admission/',views.Admission.as_view(),name='admission'),
+    path('admission/',views.Bo.as_view(),name='admission'),
     #path('contact/',views.Contact.as_view(),name='contact'),
     path('contact/', views.contact_view, name='contact'),
 ]

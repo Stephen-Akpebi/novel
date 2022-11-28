@@ -1,0 +1,114 @@
+{% extends 'novel/base.html' %}
+{% block content %}
+{% load static %}
+	<section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'images/bg_2.jpg' %});">
+	<div class="overlay"></div>
+	<div class="container">
+		<div class="row no-gutters slider-text align-items-center justify-content-center">
+		<div class="col-md-9 ftco-animate text-center">
+			<h1 class="mb-2 bread"></h1>
+			<p class="breadcrumbs"><span class="mr-2"><a href="{% url 'novel:home' %}">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Teachers <i class="ion-ios-arrow-forward"></i></span></p>
+		</div>
+		</div>
+	</div>
+	</section>
+		
+	<section class="ftco-section ftco-no-pb">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-2">
+		<div class="col-md-8 text-center heading-section ftco-animate">
+		<h2 class="mb-4"><span>ADMISSION POLICY</span></h2>
+		<p>Our Admissions Team undertakes a thorough admissions process to ensure we have as clear a picture as possible of each learner’s individual strengths, weaknesses, personality, learning style and any special needs they may have. This helps ensure that facilitators can tailor their lessons to the needs of individual students and helps us effectively track learner progress.</p>
+
+		<p>To apply, parents can either visit us in person or begin by filling out the pre-entry enquiry form* online. The Academy’s detailed Admissions Policy can be found below:</p>
+
+		<div class="col-md-3 d-flex align-items-center">
+			<p class="mb-0"><a href="#" class="btn btn-secondary px-4 py-3">ADMISSION POLICY</a></p>
+		</div>
+		</div>
+		</div>
+	</div>	
+	</section>
+	<section class="ftco-section ftco-no-pb">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-2">
+		<div class="col-md-8 text-center heading-section ftco-animate">
+		<h2 class="mb-4"><span>ASSESSMENT DAYS</span></h2>
+
+		<h2 class="mb-4">PRESCHOOL</h2>
+		<p>For Preschool, this assessment is in the form of a short questionnaire  for parents and an informal interview with the learner. An appointment for this is arranged between the Academy and parent</p>
+		</div>
+		</div>
+	</div>	
+	</section>
+	<section class="ftco-section ftco-no-pt ftc-no-pb">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 order-md-last wrap-about py-5 wrap-about bg-light">
+					<div class="text px-4 ftco-animate">
+						<h2 class="mb-4"><h2 class="mb-4"></h2></h2>
+						<p>A follow up interview  and meeting is also arranged to discuss all our observations and the  learning plan that will be put in place for your learner moving forward.  This process helps our teachers to tailor their lessons to the specific  needs of each student, track their progress, and in design intervention  for struggling students.</p>
+						<p>A ‘Welcome to Aves’ orientation is  arranged for all new parents ahead of the new academic year, and for all new learners to give them a proper introduction to and understanding of our programs, school values, what we expect from them, and  what we expect from parents. </p>
+					</div>
+				</div>
+				<div class="col-md-7 wrap-about py-5 pr-md-4 ftco-animate">
+		<h2 class="mb-4">PRIMARY & SECONDARY</h2>
+					<p> For Years 1+, this assessment is in the form an Assessment Day, which  involves written aptitude tests (qualitative and quantitative), a  general observation and group tasks with peers. </p>
+					<p>A follow up interview  and discussion are also arranged, and provisions made for the learner.</p>
+					<p>The  Assessment Day gives us a chance to observe the overall behaviour, habits, and learning skills of your child. There will be a short recess in  between each test, and a lunch break in the afternoon. Lunch will be  provided by the Academy.</p>
+					<p>There is no specific preparation required ahead of the assessment.  However, since each test is designed to assess information that we hope our learners know at each level at Aves, your child may generally revise his/her notes from their most-recent academic year.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="ftco-section ftco-consult ftco-no-pt ftco-no-pb" style="background-image: url({% static 'images/bg_5.jpg' %});" data-stellar-background-ratio="0.5">
+		<div class="container">
+			<div class="row justify-content-end">
+				<div class="col-md-6 py-5 px-md-5 bg-primary">
+				<div class="heading-section heading-section-white ftco-animate mb-5">
+				<h2 class="mb-4">ADMISSION PROCESS</h2>
+				<p>PRESCHOOL</p>
+				</div>
+				<form action="#" class="appointment-form ftco-animate">
+						<div class="d-md-flex">
+							<div class="form-group">
+								<p>Step 1</p>
+								<p>Fill out the pre-entry enquiry form here or at our office. </p>
+							</div>
+							<div class="form-group ml-md-4">
+								<p>Step 2</p>
+								<p>Your ward attends an assessment day.</p>
+							</div>
+						</div>
+						<div class="d-md-flex">
+							<div class="form-group">
+								<div class="form-field">
+							<div class="select-wrap">
+						<div class="icon"><span class="ion-ios-arrow-down"></span></div>
+						<p>Step 3</p>
+						<p>A Student Identification Number will be generated for your ward. </p>
+					</div>
+						</div>
+							</div>
+							<div class="form-group ml-md-4">
+								<p>Step 4</p>
+								<p>Enrolment & Fees Payment.</p>
+							</div>
+						</div>
+						<div class="d-md-flex">
+							<div class="form-group">
+								<p>Step 5</p>
+								<p>Submit </p>
+					</div>
+					<div class="form-group ml-md-4">
+						<p class="mb-0"><a href="#" class="btn btn-secondary px-4 py-3">Take a Course</a></p>
+					</div>
+						</div>
+					</form>
+				</div>
+		</div>
+		</div>
+	</section>
+	{% include 'novel/footer.html' %}
+
+	{% endblock content %}

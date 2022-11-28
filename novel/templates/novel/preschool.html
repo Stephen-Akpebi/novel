@@ -1,0 +1,82 @@
+{% extends 'novel/base.html' %}
+{% block content %}
+{% load static %}
+	<section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'images/bg_2.jpg' %});">
+	<div class="overlay"></div>
+	<div class="container">
+		<div class="row no-gutters slider-text align-items-center justify-content-center">
+		<div class="col-md-9 ftco-animate text-center">
+			<h1 class="mb-2 bread">Preschool</h1>
+			<p class="breadcrumbs"><span class="mr-2"><a href="{% url 'novel:home' %}">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Preschool <i class="ion-ios-arrow-forward"></i></span></p>
+		</div>
+		</div>
+	</div>
+	</section>
+		
+	<section class="ftco-section ftco-no-pb">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-2">
+		<div class="col-md-8 text-center heading-section ftco-animate">
+		<h2 class="mb-4"><span>PRESCHOOL</span></h2>
+		<p>Our preschool campus in community 25 is located
+			just a few steps away from our main campus.</p>
+
+		<p>Admissions are for ages 1 – 5.
+			From here, they move on to primary school.</p>
+
+
+		<p>It is our goal to support independence and encourage personal responsibility. We achieve this by giving children opportunities to explore movement, dress up by themselves, choose what they want to do and under adult supervision, perform challenging tasks that will develop and stretch their imagination.</p>
+
+		<p>When they are able to achieve this, there is an increase in their self-belief, self-confidence and self-esteem that they will need for life.</p>
+
+		<h2 class="mb-4"><span>PRESCHOOL</span></h2>
+
+		<p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+		<p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+		<div class="col-md-3 d-flex align-items-center">
+			<p class="mb-0"><a href="#" class="btn btn-secondary px-4 py-3">Take a Course</a></p>
+		</div>
+		</div>
+	</div>	
+	</section>
+	<section class="ftco-intro" style="background-image: url({% static 'images/bg_3.jpg' %});" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9">
+					<h2>Teaching Your Child Some Good Manners</h2>
+					<p class="mb-0">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+				</div>
+				<div class="col-md-3 d-flex align-items-center">
+					<p class="mb-0"><a href="#" class="btn btn-secondary px-4 py-3">Take a Course</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="ftco-section ftco-no-pb">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-2">
+		<div class="col-md-8 text-center heading-section ftco-animate">
+		<h2 class="mb-4"><span>NURSERY 1 & NURSERY 2 </span></h2>
+		<p>The ages for Skylarks and Bluebirds are 2-3 years and 3-4 years respectively, with a maximum intake of 15 learners per class. The focus in these units is develop their Literacy, Mathematics and Expressive Arts & Design skills. There’s an additional focus on expanding their understanding of the world around them through arts & crafts, drama, music, reading and games. </p>
+
+		<h2 class="mb-4"><span>RECEPTION</span></h2>
+
+		<p>The ages for Sparrows are 4-5 years, with a maximum intake of 15 learners per class. An enabling environment is created for our Sparrows to extend their existing skills and develop confidence through computer training, construction of sentences, knowledge of basic mathematics, and imaginative play. The broad curricula for these units are centred on the following guidelines:</p>
+
+		<p>Communication, Language and Literacy</p>
+		<p>Personal, Social and Emotional Development</p>
+		<p>Physical Development  </p>
+		<p>Creative Development</p>
+		<p>Mathematical Development</p>
+		<p>Knowledge and Understanding of the World </p>
+		
+		<div class="col-md-3 d-flex align-items-center">
+			<p class="mb-0"><a href="#" class="btn btn-secondary px-4 py-3">Take a Course</a></p>
+		</div>
+		</div>
+	</div>	
+	</section>
+	{% include 'novel/footer.html' %}
+
+	{% endblock content %}
