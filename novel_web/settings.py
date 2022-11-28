@@ -32,7 +32,7 @@ STATIC_DIR = BASE_DIR/ 'static'
 SECRET_KEY = 'django-insecure-ft3&-0c7cjg8ymgmsl9=d0_mi4-3z8wmfxzkb13+%6gpgaa9o='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['www.novelacademygh.com','.herokuapp.com', '127.0.0.1']
 
