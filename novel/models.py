@@ -37,7 +37,6 @@ class Gallery(models.Model):
 class Contact(models.Model):
     name = models.CharField(max_length=200, unique=True)
     email = models.CharField(max_length=200, unique=True)
-    website =  models.CharField(max_length=200, unique=True)
     message = models.TextField(max_length=200, unique=True)
     
     def __str__(self):

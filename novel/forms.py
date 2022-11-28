@@ -20,7 +20,16 @@ from .models import Contact
 
 
 
-class ContactForm(ModelForm):
+
+
+class ContactForm(forms.ModelForm):
+    
     class Meta:
         model = Contact
-        fields = '__all__'
+        fields = ('name','email','message')
+    
+    Widgets  = {
+        'name': forms.TextInput(attrs={'class': 'form-control'}),
+        'email': forms.TextInput(attrs={'class': 'form-control'}),
+        'message': forms.TextInput(attrs={'class': 'form-control'}),
+    }

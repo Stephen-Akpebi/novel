@@ -15,6 +15,8 @@ import os
 import django_heroku
 import dj_database_url
 import sys
+import decouple
+import cloudinary
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -46,9 +48,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'novel',
     'active_link',
-    #'debug_toolbar',
-    #"django_bootstrap5",
-    #'crispy_forms',
+    'debug_toolbar',
+    "bootstrap5",
+    'crispy_forms',
+    'cloudinary_storage',
+    'cloudinary',
 ]
 
 CRISPY_TEMPLATE_PACK = 'uni_form'
@@ -133,6 +137,18 @@ USE_I18N = True
 
 USE_TZ = True
 
+import os
+from django.contrib.messages import constants as messages
+
+
+MESSAGE_TAGS = {
+        messages.DEBUG: 'alert-secondary',
+        messages.INFO: 'alert-info',
+        messages.SUCCESS: 'alert-success',
+        messages.WARNING: 'alert-warning',
+        messages.ERROR: 'alert-danger',
+    }
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
@@ -154,3 +170,16 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFileStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 django_heroku.settings(locals())
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'de1m9irun',
+    'API_KEY': '234324812698751',
+    'API_SECRET': '-470BOgDGAyUoBOUWLmaAakRARY',
+}
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+
+if os.getcwd() == 'app':
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED', 'https')
+    SECURE_SSL_REDIRECT = True 
+    DEBUG = False
