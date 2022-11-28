@@ -22,7 +22,7 @@ urlpatterns = [
     path('secondary/',views.Secondary.as_view(),name='secondary'),
     path('boarding/',views.Boarding.as_view(),name='boarding'),
     path('admission/',views.Admission.as_view(),name='admission'),
-    path('admission/',views.Bo.as_view(),name='admission'),
+    path('admission/',views.Bod.as_view(),name='admission'),
     #path('contact/',views.Contact.as_view(),name='contact'),
     path('contact/', views.contact_view, name='contact'),
 ]
