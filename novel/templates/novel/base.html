@@ -9,6 +9,11 @@
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
 
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicon/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicon/favicon-16x16.png' %}">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+
     <link rel="stylesheet" href="{% static 'css/open-iconic-bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/animate.css' %}">
     
@@ -32,15 +37,15 @@
                     <div class="row d-flex">
                         <div class="col-md-5 pr-4 d-flex topper align-items-center">
                             <div class="icon bg-fifth mr-2 d-flex justify-content-center align-items-center"><span class="icon-map"></span></div>
-                            <span class="text">Accra/Ghana, Tema community 25, Adom Estate</span>
+                            <span class="text">Accra/Ghana, Tema community 26, Adom Estate</span>
                         </div>
                         <div class="col-md pr-4 d-flex topper align-items-center">
                             <div class="icon bg-secondary mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
-                            <span class="text">youremail@email.com</span>
+                            <span class="text">novelacademy.info@gmail.com</span>
                         </div>
                         <div class="col-md pr-4 d-flex topper align-items-center">
                             <div class="icon bg-tertiary mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
-                            <span class="text">+ 1235 2355 98</span>
+                            <span class="text">+233 5573 05552</span>
                         </div>
                     </div>
                 </div>
@@ -57,11 +62,23 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active "><a href="{% url 'novel:home' %}" class="nav-link pl-0">Home</a></li>
                 <li class="nav-item "><a href="{% url 'novel:about' %}" class="nav-link pl-0">About</a></li>
-                <li class="nav-item "><a href="{% url 'novel:teacher' %}" class="nav-link">Teacher</a></li>
-                <li class="nav-item "><a href="{% url 'novel:courses' %}" class="nav-link">Courses</a></li>
+                <li class="nav-item "></li>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Governance</a>
+                    <div class="dropdown-menu rounded-0 m-0">
+                        <a href="#" class="dropdown-item">Board of Directors</a>
+                        <a href="{% url 'novel:teacher' %}" class="dropdown-item">Teachers</a>
+                    </div>
+                </div>
                 <li class="nav-item "><a href="{% url 'novel:gallery' %}" class="nav-link">Gallery</a></li>
-                <li class="nav-item "><a href="{% url 'novel:blog' %}" class="nav-link">Blog</a></li>
+                <li class="nav-item "><a href="{% url 'novel:blog' %}" class="nav-link">Journal</a></li>
                 <li class="nav-item "><a href="{% url 'novel:contact' %}" class="nav-link">Contact</a></li>
+                <div class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Academics</a>
+                    <div class="dropdown-menu rounded-0 m-0">
+                        <a href="#" class="dropdown-item">Preschool</a>
+                        <a href="#" class="dropdown-item">Primary</a>
+                    </div>
+                </div>
             </ul>
             </div>
         </div>

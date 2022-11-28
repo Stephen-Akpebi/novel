@@ -1,11 +1,26 @@
 from django.shortcuts import render
 from django.views import generic
+from telnetlib import GA
+from django.shortcuts import render
+from django.views.generic import TemplateView, DetailView
+from django.views import generic
+from .models import Gallery, Teachers
+from .forms import ContactForm
+from django.views.generic.edit import FormView
+from django.shortcuts import render, redirect
+from .forms import ContactForm
+from django.core.mail import send_mail, BadHeaderError
+from django.http import HttpResponse
+from django.contrib import messages
 
+# Create your views here.
 
-class Home(generic.TemplateView):
+class Home(generic.ListView):
+    queryset = Teachers.objects.all()
     template_name = 'novel/index.html'
 
-class Courses(generic.TemplateView):
+
+class Facility(generic.TemplateView):
     template_name = 'novel/courses.html'
 
 
@@ -14,13 +29,13 @@ class Contact(generic.TemplateView):
 
 
 
-class Gallery(generic.TemplateView):
+class Gallery(generic.ListView):
+    queryset = Gallery.objects.all()
     template_name = 'novel/gallery.html'
 
 
-
-
-class Teachers(generic.TemplateView):
+class Teachers(generic.ListView):
+    queryset = Teachers.objects.all()
     template_name = 'novel/teacher.html'
 
 class Blog(generic.TemplateView):
@@ -45,6 +60,22 @@ class BlogDetail(generic.TemplateView):
 
 class About(generic.TemplateView):
     template_name = 'novel/about.html'
+
+
+def contact_view(request):
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Contact request submitted successfully.')
+            return render(request, 'novel/contact.html', {'form': ContactForm(request.GET)})
+        else:
+            messages.error(request, 'Invalid form submission.')
+            messages.error(request, form.errors)
+    form = ContactForm()
+    context = {'form': form}
+    return render(request, 'novel/contact.html', context)
+
 
 
 

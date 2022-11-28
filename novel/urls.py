@@ -16,6 +16,7 @@ urlpatterns = [
     path('blog/',views.Blog.as_view(),name='blog'),
     path('blogdetail/',views.BlogDetail.as_view(),name='blogdetail'),
     path('teacher/',views.Teachers.as_view(),name='teacher'),
-    path('courses/',views.Courses.as_view(),name='courses'),
-    path('contact/',views.Contact.as_view(),name='contact'),
+    path('facility/',views.Facility.as_view(),name='facility'),
+    #path('contact/',views.Contact.as_view(),name='contact'),
+    path('contact/', views.contact_view, name='contact'),
 ]

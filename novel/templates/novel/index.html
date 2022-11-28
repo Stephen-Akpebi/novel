@@ -84,10 +84,8 @@
 				<div class="row">
 					<div class="col-md-5 order-md-last wrap-about py-5 wrap-about bg-light">
 						<div class="text px-4 ftco-animate">
-				<h2 class="mb-4">Welcome to Novel Academy</h2>
+							<h2 class="mb-4">Welcome to Novel Academy</h2>
 							<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p>
-							<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. And if she hasn’t been rewritten, then they are still using her.</p>
-							<p><a href="#" class="btn btn-secondary px-4 py-3">Read More</a></p>
 						</div>
 					</div>
 					<div class="col-md-7 wrap-about py-5 pr-md-4 ftco-animate">
@@ -168,7 +166,20 @@
 				</div>
 			</div>
 		</section>
-
+		<section class="ftco-section ftco-no-pb">
+			<div class="container">
+				<div class="row justify-content-center mb-5 pb-2">
+			<div class="col-md-8 text-center heading-section ftco-animate">
+			<h2 class="mb-4"><span>Events </span>Calendar</h2>
+			<p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+			</div>
+		</div>	
+				<div class="row">
+					
+					<iframe src="https://calendar.google.com/calendar/embed?height=500&wkst=1&bgcolor=%23ffffff&ctz=Africa%2FAbidjan&showTitle=0&src=c3VyZmFvcmdAZ21haWwuY29t&color=%23039BE5" style="border-width:0" width="1220" height="500" frameborder="0" scrolling="no"></iframe>
+				</div>
+			</div>
+		</section>
 		
 		<section class="ftco-section ftco-no-pb">
 			<div class="container">
@@ -179,86 +190,28 @@
 			</div>
 		</div>	
 				<div class="row">
+					{% for teachers in teachers_list %}
 					<div class="col-md-6 col-lg-3 ftco-animate">
 						<div class="staff">
 							<div class="img-wrap d-flex align-items-stretch">
 								<div class="img align-self-stretch" style="background-image: url({% static 'images/teacher-1.jpg' %});"></div>
 							</div>
 							<div class="text pt-3 text-center">
-								<h3>Bianca Wilson</h3>
-								<span class="position mb-2">Teacher</span>
+								<h3>{{ teachers.name}}</h3>
+								<span class="position mb-2">{{teachers.title}}</span>
 								<div class="faded">
-									<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+									<p>{{teachers.about}}</p>
 									<ul class="ftco-social text-center">
-						<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-						<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-						<li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-						<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-						</ul>
-					</div>
+										<li class="ftco-animate"><a href="{{ trainers.twitter_account}}"><span class="icon-twitter"></span></a></li>
+										<li class="ftco-animate"><a href="{{ trainers.fb_account}}"><span class="icon-facebook"></span></a></li>
+										<li class="ftco-animate"><a href="{{ trainers.google_plus_account}}"><span class="icon-google-plus"></span></a></li>
+										<li class="ftco-animate"><a href="{{ trainers.insta_account}}"><span class="icon-instagram"></span></a></li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url({% static 'images/teacher-2.jpg' %});"></div>
-							</div>
-							<div class="text pt-3 text-center">
-								<h3>Mitch Parker</h3>
-								<span class="position mb-2">English Teacher</span>
-								<div class="faded">
-									<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-									<ul class="ftco-social text-center">
-						<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-						<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-						<li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-						<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-						</ul>
-					</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url({% static 'images/teacher-3.jpg' %});"></div>
-							</div>
-							<div class="text pt-3 text-center">
-								<h3>Stella Smith</h3>
-								<span class="position mb-2">Art Teacher</span>
-								<div class="faded">
-									<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-									<ul class="ftco-social text-center">
-						<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-						<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-						<li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-						<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-						</ul>
-					</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url({% static 'images/teacher-4.jpg' %});"></div>
-							</div>
-							<div class="text pt-3 text-center">
-								<h3>Monshe Henderson</h3>
-								<span class="position mb-2">Science Teacher</span>
-								<div class="faded">
-									<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-									<ul class="ftco-social text-center">
-						<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-						<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-						<li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-						<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-						</ul>
-					</div>
-							</div>
-						</div>
-					</div>
+					{% endfor %}
 				</div>
 			</div>
 		</section>
