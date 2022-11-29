@@ -27,7 +27,7 @@ class Facility(generic.TemplateView):
 class Preschool(generic.TemplateView):
     template_name = 'novel/preschool.html'
 
-class Primaries(generic.TemplateView):
+class Primary(generic.TemplateView):
     template_name = 'novel/primary.html'
 
 class Secondary(generic.TemplateView):
