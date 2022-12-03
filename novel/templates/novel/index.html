@@ -3,7 +3,7 @@
 {% load static %}
 
 	<section class="home-slider owl-carousel">
-		<div class="slider-item" style="background-image:url({% static 'images/bg_1.jpg' %});">
+		<div class="slider-item" style="background-image:url({% static 'images/novel-33.jpg' %});">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
@@ -14,7 +14,7 @@
 		</div>
 		</div>
 
-		<div class="slider-item" style="background-image:url({% static 'images/bg_2.jpg' %});">
+		<div class="slider-item" style="background-image:url({% static 'images/novel-40.jpg' %});">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
@@ -151,7 +151,7 @@
 			</div>
 		</section>
 		
-		<section class="ftco-intro" style="background-image: url({% static 'images/bg_3.jpg' %});" data-stellar-background-ratio="0.5">
+		<section class="ftco-intro" style="background-image: url({% static 'images/novel-38.jpg' %});" data-stellar-background-ratio="0.5">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
@@ -193,7 +193,7 @@
 					<div class="col-md-6 col-lg-3 ftco-animate">
 						<div class="staff">
 							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url({% static 'images/teacher-1.jpg' %});"></div>
+								<div class="img align-self-stretch" style="background-image: url({{teachers.image.url}});"></div>
 							</div>
 							<div class="text pt-3 text-center">
 								<h3>{{ teachers.name}}</h3>
@@ -211,51 +211,6 @@
 						</div>
 					</div>
 					{% endfor %}
-				</div>
-			</div>
-		</section>
-
-		<section class="ftco-section">
-			<div class="container">
-				<div class="row justify-content-center mb-5 pb-2">
-			<div class="col-md-8 text-center heading-section ftco-animate">
-			<h2 class="mb-4"><span>Our</span> Courses</h2>
-			<p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-			</div>
-		</div>	
-				<div class="row">
-					<div class="col-md-6 course d-lg-flex ftco-animate">
-						<div class="img" style="background-image: url({% static 'images/course-1.jpg' %});"></div>
-						<div class="text bg-light p-4">
-							<h3><a href="#">Arts Lesson</a></h3>
-							<p class="subheading"><span>Class time:</span> 9:00am - 10am</p>
-							<p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-						</div>
-					</div>
-					<div class="col-md-6 course d-lg-flex ftco-animate">
-						<div class="img" style="background-image: url({% static 'images/course-2.jpg' %});"></div>
-						<div class="text bg-light p-4">
-							<h3><a href="#">Language Lesson</a></h3>
-							<p class="subheading"><span>Class time:</span> 9:00am - 10am</p>
-							<p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-						</div>
-					</div>
-					<div class="col-md-6 course d-lg-flex ftco-animate">
-						<div class="img" style="background-image: url({% static 'images/course-3.jpg' %});"></div>
-						<div class="text bg-light p-4">
-							<h3><a href="#">Music Lesson</a></h3>
-							<p class="subheading"><span>Class time:</span> 9:00am - 10am</p>
-							<p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-						</div>
-					</div>
-					<div class="col-md-6 course d-lg-flex ftco-animate">
-						<div class="img" style="background-image: url({% static 'images/course-4.jpg' %});"></div>
-						<div class="text bg-light p-4">
-							<h3><a href="#">Sports Lesson</a></h3>
-							<p class="subheading"><span>Class time:</span> 9:00am - 10am</p>
-							<p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-						</div>
-					</div>
 				</div>
 			</div>
 		</section>
@@ -403,28 +358,28 @@
 		<div class="container-wrap">
 			<div class="row no-gutters">
 					<div class="col-md-3 ftco-animate">
-						<a href="images/image_1.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url({% static 'images/course-1.jpg' %});">
+						<a href="{% static 'images/novel-43.jpg' %}" class="gallery image-popup img d-flex align-items-center" style="background-image: url({% static 'images/novel-43.jpg' %});">
 							<div class="icon mb-4 d-flex align-items-center justify-content-center">
 							<span class="icon-instagram"></span>
 						</div>
 						</a>
 					</div>
 					<div class="col-md-3 ftco-animate">
-						<a href="images/image_2.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url({% static 'images/image_2.jpg' %});">
+						<a href="{% static 'images/novel-42.jpg' %}" class="gallery image-popup img d-flex align-items-center" style="background-image: url({% static 'images/novel-42.jpg' %});">
 							<div class="icon mb-4 d-flex align-items-center justify-content-center">
 							<span class="icon-instagram"></span>
 						</div>
 						</a>
 					</div>
 					<div class="col-md-3 ftco-animate">
-						<a href="images/image_3.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url({% static 'images/image_3.jpg' %});">
+						<a href="{% static 'images/novel-41.jpg' %}" class="gallery image-popup img d-flex align-items-center" style="background-image: url({% static 'images/novel-41.jpg' %});">
 							<div class="icon mb-4 d-flex align-items-center justify-content-center">
 							<span class="icon-instagram"></span>
 						</div>
 						</a>
 					</div>
 					<div class="col-md-3 ftco-animate">
-						<a href="images/image_4.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url({% static 'images/image_4.jpg' %});">
+						<a href="{% static 'images/novel-39.jpg' %}" class="gallery image-popup img d-flex align-items-center" style="background-image: url({% static 'images/novel-39.jpg' %});">
 							<div class="icon mb-4 d-flex align-items-center justify-content-center">
 							<span class="icon-instagram"></span>
 						</div>
