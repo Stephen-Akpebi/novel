@@ -10854,14 +10854,14 @@ h5,
 }
 
 .ftco-navbar-light {
-    background: transparent !important;
+    background: #000000 !important;
     z-index: 3;
     padding: 0;
 }
 
 @media (max-width: 991.98px) {
     .ftco-navbar-light {
-        background: #000000 !important;
+        background: #fff !important;
         position: relative;
         top: 0;
         padding: 10px 15px;
@@ -10994,7 +10994,7 @@ h5,
 
 .ftco-navbar-light .navbar-toggler {
     border: none;
-    color: rgba(255, 255, 255, 0.5) !important;
+    color: #fff !important;
     cursor: pointer;
     padding-right: 0;
     text-transform: uppercase;
