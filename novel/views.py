@@ -15,7 +15,7 @@ from django.contrib import messages
 
 # Create your views here.
 
-class Home(generic.ListView):
+class Home(generic.TemplateView):
     template_name = 'novel/index.html'
 
 
