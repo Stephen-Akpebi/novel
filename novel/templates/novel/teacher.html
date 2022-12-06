@@ -16,17 +16,17 @@
 		<section class="ftco-section ftco-no-pb">
 			<div class="container">
 				<div class="row">
-					{% for teachers in teachers_list %}
+					{% for Instructor in Instructor_list %}
 					<div class="col-md-6 col-lg-3 ftco-animate">
 						<div class="staff">
 							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url({{teachers.image.url}});"></div>
+								<div class="img align-self-stretch" style="background-image: url({{Instructor.image.url}});"></div>
 							</div>
 							<div class="text pt-3 text-center">
-								<h3>{{ teachers.name}}</h3>
-								<span class="position mb-2">{{teachers.title}}</span>
+								<h3>{{ Instructor.name}}</h3>
+								<span class="position mb-2">{{Instructor.title}}</span>
 								<div class="faded">
-									<p>{{teachers.about}}</p>
+									<p>{{Instructor.about}}</p>
 								</div>
 							</div>
 						</div>

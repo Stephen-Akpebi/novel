@@ -40,6 +40,16 @@ class Gallery(models.Model):
         return self.title
 
 
+class Instructor(models.Model):
+    image = models.ImageField(upload_to='users/%Y/%m/%d/', blank=True)
+    title = models.CharField(max_length=200, unique=False)
+    name = models.CharField(max_length=200, unique=True)
+    about = models.CharField(max_length=200, unique=False)
+    
+    def __str__(self):
+        return self.title
+
+
 class Contact(models.Model):
     name = models.CharField(max_length=200, unique=True)
     email = models.CharField(max_length=200, unique=True)
