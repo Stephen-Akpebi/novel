@@ -11,15 +11,6 @@ STATUS = (
     (1,"publish")
 )
 
-class Teachers(models.Model):
-    image = models.ImageField(upload_to='users/%Y/%m/%d/', blank=True)
-    title = models.CharField(max_length=200, unique=False)
-    name = models.CharField(max_length=200, unique=True)
-    about = models.CharField(max_length=200, unique=False)
-    
-    def __str__(self):
-        return self.title
-
 
 class Bod(models.Model):
     title = models.CharField(max_length=200, unique=False)
@@ -39,15 +30,6 @@ class Gallery(models.Model):
     def __str__(self):
         return self.title
 
-
-class Instructor(models.Model):
-    image = models.ImageField(upload_to='users/%Y/%m/%d/', blank=True)
-    title = models.CharField(max_length=200, unique=False)
-    name = models.CharField(max_length=200, unique=True)
-    about = models.CharField(max_length=200, unique=False)
-    
-    def __str__(self):
-        return self.title
 
 
 class Contact(models.Model):
