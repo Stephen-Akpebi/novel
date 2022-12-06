@@ -16,7 +16,7 @@ class PostAdmin(admin.ModelAdmin):
     search_fields = ['title','image',]
 
 class TeachersAdmin(admin.ModelAdmin):
-    list_display = ('title','name','about','image','fb_account','google_plus_account','insta_account')
+    list_display = ('title','name','about','image',)
     search_fields = ['title', 'name','image']
 
 class ContactAdmin(admin.ModelAdmin):
