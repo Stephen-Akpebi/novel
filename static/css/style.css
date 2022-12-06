@@ -2216,68 +2216,6 @@ select.form-control:focus::-ms-value {
     padding-left: 0;
 }
 
-
-/* Dropdown Button */
-
-.dropbtn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-}
-
-
-/* The container <div> - needed to position the dropdown content */
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-
-/* Dropdown Content (Hidden by Default) */
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-
-/* Links inside the dropdown */
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-
-/* Change color of dropdown links on hover */
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-
-/* Show the dropdown menu on hover */
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-}
-
 .form-control-sm {
     height: calc(1.8125rem + 2px);
     padding: 0.25rem 0.5rem;
@@ -4949,6 +4887,7 @@ input[type="button"].btn-block {
         flex-flow: row nowrap;
         -webkit-box-pack: start;
         -ms-flex-pack: start;
+        background-color: #fff;
         justify-content: flex-start;
     }
     .navbar-expand-lg .navbar-nav {
@@ -5286,15 +5225,6 @@ input[type="button"].btn-block {
     bottom: 0;
     left: 0;
     padding: 1.25rem;
-}
-
-.map {
-    height: 550px;
-    margin-top: 35px;
-}
-
-.map iframe {
-    width: 100%;
 }
 
 .card-img {
@@ -10854,14 +10784,14 @@ h5,
 }
 
 .ftco-navbar-light {
-    background: #000000 !important;
+    background: transparent !important;
     z-index: 3;
     padding: 0;
 }
 
 @media (max-width: 991.98px) {
     .ftco-navbar-light {
-        background: #fff !important;
+        background: #000000 !important;
         position: relative;
         top: 0;
         padding: 10px 15px;
@@ -10994,7 +10924,7 @@ h5,
 
 .ftco-navbar-light .navbar-toggler {
     border: none;
-    color: #fff !important;
+    color: rgba(255, 255, 255, 0.5) !important;
     cursor: pointer;
     padding-right: 0;
     text-transform: uppercase;
