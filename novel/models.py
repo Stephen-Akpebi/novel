@@ -12,10 +12,10 @@ STATUS = (
 )
 
 class Teachers(models.Model):
+    image = models.ImageField(upload_to='users/%Y/%m/%d/', blank=True)
     title = models.CharField(max_length=200, unique=False)
     name = models.CharField(max_length=200, unique=True)
     about = models.CharField(max_length=200, unique=False)
-    image = models.ImageField(upload_to='users/%Y/%m/%d/', blank=True)
     
     def __str__(self):
         return self.title
