@@ -11165,6 +11165,11 @@ h5,
     z-index: 0;
 }
 
+.slick-slider {
+    touch-action: auto;
+    -ms-touch-action: auto;
+}
+
 .owl-carousel.home-slider .slider-item {
     background-size: cover;
     background-repeat: no-repeat;
