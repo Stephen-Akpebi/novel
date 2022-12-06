@@ -4,7 +4,7 @@ from telnetlib import GA
 from django.shortcuts import render
 from django.views.generic import TemplateView, DetailView
 from django.views import generic
-from .models import Gallery, Teachers, Bod, Instructor
+from .models import Gallery, Bod
 from .forms import ContactForm
 from django.views.generic.edit import FormView
 from django.shortcuts import render, redirect
@@ -16,7 +16,6 @@ from django.contrib import messages
 # Create your views here.
 
 class Home(generic.ListView):
-    queryset = Teachers.objects.all()
     template_name = 'novel/index.html'
 
 
@@ -51,15 +50,6 @@ class Gallery(generic.ListView):
     queryset = Gallery.objects.all()
     template_name = 'novel/gallery.html'
 
-
-class Teachers(generic.ListView):
-    queryset = Teachers.objects.all()
-    template_name = 'novel/teacher.html'
-
-
-class Instructor(generic.ListView):
-    queryset = Instructor.objects.all()
-    template_name = 'novel/teacher.html'
 
 
 class Bod(generic.ListView):
