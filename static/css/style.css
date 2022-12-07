@@ -10930,6 +10930,9 @@ h5,
     text-transform: uppercase;
     font-size: 16px;
     letter-spacing: .1em;
+    -ms-touch-action: auto;
+    touch-action: auto;
+    overflow: auto;
 }
 
 .ftco-navbar-light .navbar-toggler:focus {
@@ -10941,6 +10944,9 @@ h5,
     right: 0;
     left: 0;
     top: 0;
+    -ms-touch-action: auto;
+    touch-action: auto;
+    overflow: auto;
     margin-top: -130px;
     background: #fff !important;
     -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
@@ -10972,6 +10978,9 @@ h5,
         border-radius: 0px;
         padding-left: 0rem !important;
         padding-right: 0rem !important;
+        overflow: auto;
+        -ms-touch-action: auto;
+        touch-action: auto;
     }
 }
 
@@ -10980,6 +10989,9 @@ h5,
         background: none;
         padding-left: 0 !important;
         padding-right: 0 !important;
+        -ms-touch-action: auto;
+        touch-action: auto;
+        overflow: auto;
     }
 }
 
@@ -10990,6 +11002,9 @@ h5,
     cursor: pointer;
     padding-right: 0;
     text-transform: uppercase;
+    -ms-touch-action: auto;
+    touch-action: auto;
+    overflow: auto;
     font-size: 16px;
     letter-spacing: .1em;
 }
@@ -11102,6 +11117,9 @@ h5,
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     margin-top: -10px;
+    -ms-touch-action: auto;
+    touch-action: auto;
+    overflow: auto;
     color: #1eaaf1 !important;
     -moz-transition: all 0.7s ease;
     -o-transition: all 0.7s ease;
@@ -11163,6 +11181,7 @@ h5,
     position: relative;
     height: 600px;
     z-index: 0;
+    overflow: auto;
     -ms-touch-action: auto;
     touch-action: auto;
 }
@@ -11179,6 +11198,7 @@ h5,
     height: 600px;
     position: relative;
     z-index: 0;
+    overflow: auto;
     -ms-touch-action: auto;
     touch-action: auto;
 }
@@ -11188,6 +11208,7 @@ h5,
         background-position: center center !important;
         -ms-touch-action: auto;
         touch-action: auto;
+        overflow: auto;
     }
 }
 
@@ -11197,6 +11218,7 @@ h5,
     bottom: 0;
     left: 0;
     right: 0;
+    overflow: auto;
     background: #000000;
     opacity: .2;
     -ms-touch-action: auto;
@@ -11302,6 +11324,7 @@ h5,
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
     opacity: 0;
+    overflow: auto;
 }
 
 .owl-carousel.home-slider .owl-nav .owl-prev span:before,
@@ -11313,6 +11336,7 @@ h5,
     -webkit-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    overflow: auto;
 }
 
 .owl-carousel.home-slider .owl-nav .owl-prev:hover span:before,
@@ -11340,6 +11364,7 @@ h5,
 .owl-carousel.home-slider:hover .owl-nav .owl-prev {
     left: 50%;
     margin-left: -80px;
+    overflow: auto;
 }
 
 .owl-carousel.home-slider:hover .owl-nav .owl-next {
@@ -13220,6 +13245,20 @@ stroke-dashoffset: -136px;
 
 }
 stroke-dashoffset: -136px;
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
 
 }
 
