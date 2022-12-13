@@ -60,8 +60,8 @@ class Blog(generic.TemplateView):
     template_name = 'novel/blog.html'
 
 
-class BlogDetail(generic.TemplateView):
-    template_name  = 'novel/blog-single.html'
+class Courses(generic.TemplateView):
+    template_name  = 'novel/courses.html'
 
 
 #class Blog(DetailView):
