@@ -24,4 +24,10 @@ urlpatterns = [
     path('bod/',views.Bod.as_view(),name='bod'),
     #path('contact/',views.Contact.as_view(),name='contact'),
     path('contact/', views.contact_view, name='contact'),
+    path('arts/',views.Arts.as_view(),name='arts'),
+    path('music/',views.Music.as_view(),name='music'),
+    path('language/',views.Languge.as_view(),name='language'),
+    path('sports/',views.Sports.as_view(),name='sports'),
+    path('experiment/',views.Eperiment.as_view(),name='experiment'),
+    path('swimming/',views.Swimming.as_view(),name='swimming'),
 ]

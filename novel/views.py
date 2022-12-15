@@ -59,6 +59,28 @@ class Bod(generic.ListView):
 class Blog(generic.TemplateView):
     template_name = 'novel/blog.html'
 
+class Arts(generic.TemplateView):
+    template_name = 'novel/artsl.html'
+
+
+class Eperiment(generic.TemplateView):
+    template_name = 'novel/experiment.html'
+
+
+class Languge(generic.TemplateView):
+    template_name = 'novel/language.html'
+
+
+class Music(generic.TemplateView):
+    template_name = 'novel/music.html'
+
+
+class Sports(generic.TemplateView):
+    template_name = 'novel/sports.html'
+
+
+class Swimming(generic.TemplateView):
+    template_name = 'novel/swimming.html'
 
 class Courses(generic.TemplateView):
     template_name  = 'novel/courses.html'
